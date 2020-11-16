@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<title>Weather Near You!</title>
+</head>
+<body>
+
+    <div class="container justify-content-center">
+        <h2>Weather</h2>
+        <form class="form-inline" name="getWeather" id="getWeather">
+            <div class="form-group mb-2">
+                <label for="location"></label>
+                <input type="text" name="Location" class="form-control" placeholder="location" id="city">
+            </div>
+            <button type="button" class="btn btn-danger mb-2" onclick="weatherGetter()">Get Weather</button>
+        </form>
+
+    </div>
+
+
+    <div class="container justify-content-center" id="gotWeather">
+        <h3 id=""></h3>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="weather border-right rounded">
+                    <div class="current">
+                        <div class="info container">
+                            <div>&nbsp;</div>
+                            <div class="city"><small><small>City:</small></small><div id="location">Cartagena</div></div>
+                            <div>
+                                High
+                                <div class="temp row"><div id="tempHigh">83</div>&deg; <small>F</small></div>
+                            </div>
+                            <div>
+                                Low
+                                <div class="temp row"><div id="tempLow">64</div>&deg; <small>F</small></div>
+                            </div>
+                            
+                            <div class="wind row" id="description">
+                                Forecast:&nbsp; <div id="description">Breezy</div></div>
+                            <div>&nbsp;</div>
+                            
+                            <div class="wind row" >Humidity:&nbsp;<div id="humidity">56</div>%</div>
+                            <div>&nbsp;</div>
+                        </div>
+                       
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
